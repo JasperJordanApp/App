@@ -16,6 +16,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window.rootViewController = [[UIViewController alloc] initWithNibName:@"TitleScreen" bundle:nil] ;
+    [self.window makeKeyAndVisible] ;
     // Override point for customization after application launch.
     return YES;
 }
