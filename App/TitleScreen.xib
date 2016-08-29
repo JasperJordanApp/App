@@ -23,47 +23,41 @@
             <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYf-GQ-QdF">
-                    <rect key="frame" x="208" y="169" width="250" height="50"/>
-                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
-                    <state key="normal" title="Play game">
-                        <color key="titleColor" red="0.3255620789" green="1" blue="0.16027584349999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="playGameButton:" destination="-1" eventType="touchUpInside" id="YzU-mo-EO5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7bF-ur-byU">
-                    <rect key="frame" x="233" y="227" width="200" height="50"/>
-                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
-                    <state key="normal" title="Options">
-                        <color key="titleColor" red="0.3255620789" green="1" blue="0.16027584349999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="optionsButton:" destination="-1" eventType="touchUpInside" id="EAL-yp-vw5"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2K-aB-5s5">
-                    <rect key="frame" x="233" y="285" width="200" height="50"/>
-                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
-                    <state key="normal" title="Stats">
-                        <color key="titleColor" red="0.3255620789" green="1" blue="0.16027584349999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </state>
-                    <connections>
-                        <action selector="statsButton:" destination="-1" eventType="touchUpInside" id="SVy-LD-Dj3"/>
-                    </connections>
-                </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Space Base" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OiQ-vt-FP7">
-                    <rect key="frame" x="133" y="34" width="400" height="75"/>
-                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="46"/>
-                    <color key="textColor" red="0.3255620789" green="1" blue="0.16027584349999999" alpha="1" colorSpace="calibratedRGB"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Space Base" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ulY-Kw-lKG">
+                    <rect key="frame" x="133" y="23" width="400" height="80"/>
+                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="45"/>
+                    <color key="textColor" red="0.0" green="1" blue="0.051855699339533601" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vRK-GX-gC0">
+                    <rect key="frame" x="208" y="279" width="250" height="50"/>
+                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
+                    <state key="normal" title="Stats">
+                        <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI6-Il-eog">
+                    <rect key="frame" x="208" y="221" width="250" height="50"/>
+                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
+                    <state key="normal" title="Options">
+                        <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-TD-Qci">
+                    <rect key="frame" x="208" y="163" width="250" height="50"/>
+                    <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="24"/>
+                    <state key="normal" title="Play Game">
+                        <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="startGameButton:" destination="-1" eventType="touchUpInside" id="f34-X4-G3A"/>
+                    </connections>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="451.5" y="294.5"/>
+            <point key="canvasLocation" x="-54.5" y="771.5"/>
         </view>
     </objects>
 </document>

@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface GameScreen : UIViewController
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil ;
 
 @end
