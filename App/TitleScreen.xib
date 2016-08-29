@@ -13,8 +13,9 @@
         </mutableArray>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleScreen">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppController">
             <connections>
+                <outlet property="titleView" destination="i5M-Pr-FkT" id="pZd-xf-WW6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -35,6 +36,9 @@
                     <state key="normal" title="Stats">
                         <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="titleScreenStatsButton:" destination="-1" eventType="touchUpInside" id="b7S-fg-Bic"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BI6-Il-eog">
                     <rect key="frame" x="208" y="221" width="250" height="50"/>
@@ -42,6 +46,9 @@
                     <state key="normal" title="Options">
                         <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="titleScreenOptiosnButton:" destination="-1" eventType="touchUpInside" id="eDr-me-hoh"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9l-TD-Qci">
                     <rect key="frame" x="208" y="163" width="250" height="50"/>
@@ -51,13 +58,14 @@
                     </state>
                     <connections>
                         <action selector="startGameButton:" destination="-1" eventType="touchUpInside" id="f34-X4-G3A"/>
+                        <action selector="titleScreenPlayGameButton:" destination="-1" eventType="touchUpInside" id="5zT-Ub-A5a"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-54.5" y="771.5"/>
+            <point key="canvasLocation" x="-234.5" y="725.5"/>
         </view>
     </objects>
 </document>

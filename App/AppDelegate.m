@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "TitleScreen.h"
+#import "AppController.h"
 
 @interface AppDelegate ()
 
@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 
-    self.window.rootViewController = [TitleScreen new] ;
+    self.window.rootViewController = [[AppController alloc] initWithNibName:@"TitleScreen" bundle:nil] ;
     [self.window makeKeyAndVisible] ;
     // Override point for customization after application launch.
     return YES;
