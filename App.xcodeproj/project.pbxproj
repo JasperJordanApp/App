@@ -15,6 +15,7 @@
 		A4D5664E1D73E47B00A61F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D5664C1D73E47B00A61F00 /* LaunchScreen.storyboard */; };
 		A4D566581D73E5DD00A61F00 /* TitleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D566561D73E5DD00A61F00 /* TitleScreen.m */; };
 		A4D566591D73E5DD00A61F00 /* TitleScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4D566571D73E5DD00A61F00 /* TitleScreen.xib */; };
+		D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A4D566551D73E5DD00A61F00 /* TitleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreen.h; sourceTree = "<group>"; };
 		A4D566561D73E5DD00A61F00 /* TitleScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreen.m; sourceTree = "<group>"; };
 		A4D566571D73E5DD00A61F00 /* TitleScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleScreen.xib; sourceTree = "<group>"; };
+		D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Time_N_Space.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +84,18 @@
 		A4D5663E1D73E47B00A61F00 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D8257DEA1D73E7680053A058 /* Fonts */,
 				A4D5663F1D73E47B00A61F00 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D8257DEA1D73E7680053A058 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +129,7 @@
 				TargetAttributes = {
 					A4D5663A1D73E47B00A61F00 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 6JTAG3EJXD;
 					};
 				};
 			};
@@ -148,6 +160,7 @@
 				A4D5664B1D73E47B00A61F00 /* Assets.xcassets in Resources */,
 				A4D566591D73E5DD00A61F00 /* TitleScreen.xib in Resources */,
 				A4D566491D73E47B00A61F00 /* Main.storyboard in Resources */,
+				D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +286,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Jasper.App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -284,10 +300,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Jordan-Jasper.App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -310,6 +329,7 @@
 				A4D566541D73E47B00A61F00 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
