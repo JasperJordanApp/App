@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)playGameButton:(id)sender {
+}
+
+- (IBAction)optionsButton:(id)sender {
+}
+
+- (IBAction)statsButton:(id)sender {
+}
 @end

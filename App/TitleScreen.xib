@@ -4,6 +4,14 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Time_N_Space.ttf">
+            <string>TimeNSpace</string>
+            <string>TimeNSpace</string>
+            <string>TimeNSpace</string>
+            <string>TimeNSpace</string>
+        </mutableArray>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleScreen">
             <connections>
