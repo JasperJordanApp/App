@@ -14,7 +14,6 @@
 		A4D5664B1D73E47B00A61F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D5664A1D73E47B00A61F00 /* Assets.xcassets */; };
 		A4D5664E1D73E47B00A61F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D5664C1D73E47B00A61F00 /* LaunchScreen.storyboard */; };
 		A4D566581D73E5DD00A61F00 /* TitleScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D566561D73E5DD00A61F00 /* TitleScreen.m */; };
-		A4D566591D73E5DD00A61F00 /* TitleScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4D566571D73E5DD00A61F00 /* TitleScreen.xib */; };
 		D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */; };
 /* End PBXBuildFile section */
 
@@ -31,7 +30,6 @@
 		A4D5664F1D73E47B00A61F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4D566551D73E5DD00A61F00 /* TitleScreen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleScreen.h; sourceTree = "<group>"; };
 		A4D566561D73E5DD00A61F00 /* TitleScreen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleScreen.m; sourceTree = "<group>"; };
-		A4D566571D73E5DD00A61F00 /* TitleScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TitleScreen.xib; sourceTree = "<group>"; };
 		D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Time_N_Space.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,7 +67,6 @@
 				A4D566421D73E47B00A61F00 /* AppDelegate.m */,
 				A4D566551D73E5DD00A61F00 /* TitleScreen.h */,
 				A4D566561D73E5DD00A61F00 /* TitleScreen.m */,
-				A4D566571D73E5DD00A61F00 /* TitleScreen.xib */,
 				A4D566441D73E47B00A61F00 /* ViewController.h */,
 				A4D566451D73E47B00A61F00 /* ViewController.m */,
 				A4D566471D73E47B00A61F00 /* Main.storyboard */,
@@ -158,7 +155,6 @@
 			files = (
 				A4D5664E1D73E47B00A61F00 /* LaunchScreen.storyboard in Resources */,
 				A4D5664B1D73E47B00A61F00 /* Assets.xcassets in Resources */,
-				A4D566591D73E5DD00A61F00 /* TitleScreen.xib in Resources */,
 				A4D566491D73E47B00A61F00 /* Main.storyboard in Resources */,
 				D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */,
 			);
