@@ -16,6 +16,7 @@
 		A4FE38351D7510180047BC0C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FE38331D7510180047BC0C /* AppController.m */; };
 		A4FE38361D7510180047BC0C /* AppController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FE38341D7510180047BC0C /* AppController.xib */; };
 		D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */; };
+		D87C6CAD1D7527D2002C7676 /* StarterTurret.png in Resources */ = {isa = PBXBuildFile; fileRef = D87C6CAC1D7527D2002C7676 /* StarterTurret.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		A4FE38331D7510180047BC0C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		A4FE38341D7510180047BC0C /* AppController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppController.xib; sourceTree = "<group>"; };
 		D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Time_N_Space.ttf; sourceTree = "<group>"; };
+		D87C6CAC1D7527D2002C7676 /* StarterTurret.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StarterTurret.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		A4D68C081D74BDD3004530CC /* Junk Files */ = {
 			isa = PBXGroup;
 			children = (
+				D87C6CAB1D7527AE002C7676 /* Images */,
 				A4D68C0A1D74BE08004530CC /* XIBs */,
 				D8257DEA1D73E7680053A058 /* Fonts */,
 				A4D5663F1D73E47B00A61F00 /* main.m */,
@@ -121,6 +124,14 @@
 				D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */,
 			);
 			name = Fonts;
+			sourceTree = "<group>";
+		};
+		D87C6CAB1D7527AE002C7676 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D87C6CAC1D7527D2002C7676 /* StarterTurret.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				A4D5664E1D73E47B00A61F00 /* LaunchScreen.storyboard in Resources */,
 				A4FE38361D7510180047BC0C /* AppController.xib in Resources */,
 				A4D5664B1D73E47B00A61F00 /* Assets.xcassets in Resources */,
+				D87C6CAD1D7527D2002C7676 /* StarterTurret.png in Resources */,
 				A4D566491D73E47B00A61F00 /* Main.storyboard in Resources */,
 				D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */,
 			);
