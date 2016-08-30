@@ -15,17 +15,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AppController">
             <connections>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="gameView" destination="yLL-fM-Vnx" id="fKA-Df-O6i"/>
+                <outlet property="titleScreen" destination="TV7-o9-Sw0" id="Bgw-dK-zIN"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-        </view>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="TV7-o9-Sw0">
             <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,6 +30,9 @@
                     <state key="normal" title="Stats">
                         <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="titleScreenStatsButton:" destination="-1" eventType="touchUpInside" id="KjJ-Kb-Rze"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fmw-mm-esb">
                     <rect key="frame" x="208" y="221" width="250" height="50"/>
@@ -43,6 +40,9 @@
                     <state key="normal" title="Options">
                         <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="titleScreenOptionsButton:" destination="-1" eventType="touchUpInside" id="NzD-p8-fMb"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R73-7I-CKD">
                     <rect key="frame" x="208" y="163" width="250" height="50"/>
@@ -50,6 +50,9 @@
                     <state key="normal" title="Play Game">
                         <color key="titleColor" red="0.0" green="1" blue="0.051855699339999999" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="titleScreenPlayButton:" destination="-1" eventType="touchUpInside" id="l89-lf-04b"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Space Base" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfW-SR-Np3">
                     <rect key="frame" x="133" y="22" width="400" height="80"/>
@@ -61,7 +64,12 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-570.5" y="254.5"/>
+            <point key="canvasLocation" x="-795.5" y="234.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="yLL-fM-Vnx">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
         </view>
     </objects>
 </document>

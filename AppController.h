@@ -10,4 +10,10 @@
 
 @interface AppController : UIViewController
 
+- (IBAction)titleScreenPlayButton:(id)sender;
+- (IBAction)titleScreenOptionsButton:(id)sender;
+- (IBAction)titleScreenStatsButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIView *titleScreen;
+@property (strong, nonatomic) IBOutlet UIView *gameView;
+
 @end
