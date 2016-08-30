@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    widthOfTurret = 100 ;
     numberOfTurrets = 5 ;
     [self updateCredits:100 level:0 score:0] ;
     
@@ -34,26 +35,30 @@
 }
 
 - (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event {
+    NSLog(@"sfsdf") ;
     NSSet *touches = [event touchesForView:sender];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:sender];
     //the turret number (0-4)
-    int turretNumber = floor((double)point.x/(self.view.bounds.size.height/numberOfTurrets)) ;
-    
-    
+    int turretNumber = floor(((double)point.x)/(self.view.bounds.size.height/numberOfTurrets)) ;
+    NSLog(@"%i",turretNumber) ;
 }
 
 - (IBAction)titleScreenPlayButton:(id)sender {
-    [self.view addSubview:self.gameView] ;UIView *turrets = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 100, self.view.bounds.size.height)] ;
-    turrets.backgroundColor = [UIColor redColor] ;
+    [self.view addSubview:self.gameView] ;
+    [self.turretsOutlet setHidden:true] ;
+    
+    UIView *turrets = [[UIView alloc] initWithFrame:CGRectMake(0, 0, widthOfTurret, self.view.bounds.size.height)] ;
+    
     for(int i = 0 ; i < numberOfTurrets ; i += 1){
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"StarterTurret"]] ;
-        imageView.frame = CGRectMake(0, i*(self.view.bounds.size.height/numberOfTurrets), <#CGFloat width#>, <#CGFloat height#>)
-        
+        imageView.frame = CGRectMake(0, i*(self.view.bounds.size.height/numberOfTurrets), widthOfTurret, (self.view.bounds.size.height/numberOfTurrets)) ;
+        [turrets addSubview:imageView] ;
     }
-    
-    
+    UIButton *turretsButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, widthOfTurret, self.view.bounds.size.height)] ;
     [self.view addSubview:turrets] ;
+    [self.view bringSubviewToFront:turretsButton] ;
+    
 }
 
 - (IBAction)titleScreenOptionsButton:(id)sender {
@@ -62,20 +67,6 @@
 - (IBAction)titleScreenStatsButton:(id)sender {
 }
 
-- (IBAction)turretZeroButton:(id)sender {
-}
-
-- (IBAction)turretOneButton:(id)sender {
-}
-
-- (IBAction)turretTwoButton:(id)sender {
-}
-
-- (IBAction)turretThreeButton:(id)sender {
-}
-
-- (IBAction)turretFourButton:(id)sender {
-}
 
 - (void)updateCredits:(int)dummy level:(int)dummy1 score:(int)dummy2{
     creditCount = dummy ;

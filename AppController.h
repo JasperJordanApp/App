@@ -11,6 +11,7 @@
 @interface AppController : UIViewController{
 //Constants
     int numberOfTurrets ;
+    int widthOfTurret ;
     
     int creditCount ;
     int score ;
@@ -27,21 +28,10 @@
 
 //Game Screen:
 - (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event;
+@property (weak, nonatomic) IBOutlet UIButton *turretsOutlet;
 
 
 
-
-
-- (IBAction)turretZeroButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *turretZeroOutlet;
-- (IBAction)turretOneButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *turretOneOutlet;
-- (IBAction)turretTwoButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *turretTwoOutlet;
-- (IBAction)turretThreeButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *turretThreeOutlet;
-- (IBAction)turretFourButton:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *turretFourOutlet;
 
 @property (weak, nonatomic) IBOutlet UILabel *creditsOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *levelOutlet;
