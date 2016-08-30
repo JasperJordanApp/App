@@ -23,8 +23,7 @@
                 <outlet property="levelOutlet" destination="QhX-mS-IXs" id="xOb-JE-gjt"/>
                 <outlet property="scoreOutlet" destination="uiH-Si-ZcZ" id="GZz-zM-kNB"/>
                 <outlet property="titleScreen" destination="TV7-o9-Sw0" id="Bgw-dK-zIN"/>
-                <outlet property="turrentThreeButton" destination="G70-T7-bYa" id="8af-xF-8H5"/>
-                <outlet property="view" destination="TV7-o9-Sw0" id="zS0-GD-ziv"/>
+                <outlet property="view" destination="TV7-o9-Sw0" id="SFh-mi-4R5"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -72,7 +71,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-44.5" y="230.5"/>
+            <point key="canvasLocation" x="-802.5" y="39.5"/>
         </view>
         <view contentMode="scaleToFill" id="yLL-fM-Vnx">
             <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
@@ -135,7 +134,7 @@
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-1131.5" y="186.5"/>
+            <point key="canvasLocation" x="-74.5" y="39.5"/>
         </view>
     </objects>
 </document>
