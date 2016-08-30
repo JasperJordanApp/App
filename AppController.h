@@ -21,14 +21,24 @@
 
 //Properties:
 @property NSMutableArray *turrentArray ;
+/*Format for turretArray:
+//using class "TurretProperties", create 5 subarrays to hold that object
+Properties:
+[0] turretImageName
+[1] object of turret types class, stores speed and image for type, in both locations is cost and imageName
+[2] turret position
+[3] turret cost and sell price
+[4]
+ */
+
 @property NSMutableArray *userProjectileArray ;
 @property NSMutableArray *systemProjectileArray ;
 
 
 
 //Game Screen:
-- (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event;
-@property (weak, nonatomic) IBOutlet UIButton *turretsOutlet;
+//- (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event;
+//@property (weak, nonatomic) IBOutlet UIButton *turretsOutlet;
 
 
 

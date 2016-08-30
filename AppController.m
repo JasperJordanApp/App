@@ -8,9 +8,6 @@
 
 #import "AppController.h"
 
-@interface AppController ()
-
-@end
 
 @implementation AppController
 
@@ -34,30 +31,33 @@
     }
 }
 
-- (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event {
+- (void)turretsButton:(id)sender forEvent:(UIEvent *)event{
     NSSet *touches = [event touchesForView:sender];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:sender];
     //the turret number (0-4)
-    int turretNumber = floor(((double)point.x)/(self.view.bounds.size.height/numberOfTurrets)) ;
+    int turretNumber = floor(point.y/(self.view.bounds.size.height/numberOfTurrets)) ;
     NSLog(@"%i",turretNumber) ;
+    
+    
+    
 }
 
-- (IBAction)titleScreenPlayButton:(id)sender {
+- (IBAction)titleScreenPlayButton:(id)sender{   //laods everything in gameView Screen
     [self.view addSubview:self.gameView] ;
-    [self.turretsOutlet setHidden:true] ;
     
     UIView *turrets = [[UIView alloc] initWithFrame:CGRectMake(0, 0, widthOfTurret, self.view.bounds.size.height)] ;
-    
     for(int i = 0 ; i < numberOfTurrets ; i += 1){
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"StarterTurret"]] ;
         imageView.frame = CGRectMake(0, i*(self.view.bounds.size.height/numberOfTurrets), widthOfTurret, (self.view.bounds.size.height/numberOfTurrets)) ;
         [turrets addSubview:imageView] ;
     }
     UIButton *turretsButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, widthOfTurret, self.view.bounds.size.height)] ;
-    [self.view addSubview:turrets] ;
-    [self.view bringSubviewToFront:turretsButton] ;
+    [turretsButton addTarget:self action:@selector(turretsButton:forEvent:) forControlEvents:UIControlEventTouchUpInside] ;
     
+    [self.gameView addSubview:turrets] ;
+    [self.gameView addSubview:turretsButton] ;
+    [self.gameView bringSubviewToFront:turretsButton] ;
 }
 
 - (IBAction)titleScreenOptionsButton:(id)sender {
