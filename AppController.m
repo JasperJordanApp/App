@@ -35,7 +35,6 @@
 }
 
 - (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event {
-    NSLog(@"sfsdf") ;
     NSSet *touches = [event touchesForView:sender];
     UITouch *touch = [touches anyObject];
     CGPoint point = [touch locationInView:sender];
