@@ -31,13 +31,18 @@
 
 - (void)viewDidLoad {
     NSLog(@"Loaded") ;
-    UIView *test = [[[NSBundle mainBundle] loadNibNamed:@"TitleScreen" owner:nil options:nil] lastObject] ;
-    [self.view addSubview:test] ;
+    [super viewDidLoad];
+
+    //self.view.backgroundColor = [UIColor blueColor] ;
+    UIView *test = [UIView alloc] initWithFrame:<#(CGRect)#>
+    self.titleScreen = [[UIView alloc] initWithFrame:self.view.bounds] ;
+    [self.view addSubview:self.titleScreen] ;
+    //[self.view addSubview: ] ;
+
     //self.titleScreen = [UIView new] ;
     //[[[NSBundle mainBundle] loadNibNamed:@"TitleScreen" owner:self options:nil] ;
     
     //[self.view addSubview:self.titleScreen] ;
-    [super viewDidLoad];
 }
 - (void)didReceiveMemoryWarning {[super didReceiveMemoryWarning];}
 @end

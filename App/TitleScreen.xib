@@ -64,7 +64,7 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-314.5" y="773.5"/>
+            <point key="canvasLocation" x="-376.5" y="593.5"/>
         </view>
     </objects>
 </document>
