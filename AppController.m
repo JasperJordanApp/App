@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    [self updateCredits:0 level:0 score:0] ;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +34,28 @@
 
 - (IBAction)titleScreenStatsButton:(id)sender {
 }
+- (IBAction)turretZeroButton:(id)sender {
+}
+
+- (IBAction)turrentOneButton:(id)sender {
+}
+
+- (IBAction)turrentTwoButton:(id)sender {
+}
+
+- (IBAction)turrentThreeButton:(id)sender {
+}
+
+- (IBAction)turrentFourButton:(id)sender {
+}
+
+- (void)updateCredits:(int)dummy level:(int)dummy1 score:(int)dummy2{
+    creditCount = dummy ;
+    levelCount = dummy1 ;
+    score = dummy2 ;
+    self.creditsOutlet.text = [NSString stringWithFormat:@"Credits: %i",creditCount] ;
+    self.levelOutlet.text = [NSString stringWithFormat:@"Level: %i",levelCount] ;
+    self.scoreOutlet.text = [NSString stringWithFormat:@"Score: %i",score] ;
+}
+
 @end

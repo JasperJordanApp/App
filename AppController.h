@@ -8,8 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppController : UIViewController
+@interface AppController : UIViewController{
+    int creditCount ;
+    int score ;
+    int levelCount ;
+    double speed ;
+}
 
+//Properties:
+@property NSMutableArray *turrentArray ;
+@property NSMutableArray *userProjectileArray ;
+@property NSMutableArray *systemProjectileArray ;
+
+
+
+//Game Screen:
+- (IBAction)turretZeroButton:(id)sender;
+- (IBAction)turrentOneButton:(id)sender;
+- (IBAction)turrentTwoButton:(id)sender;
+- (IBAction)turrentThreeButton:(id)sender;
+- (IBAction)turrentFourButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *creditsOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *levelOutlet;
+@property (weak, nonatomic) IBOutlet UILabel *scoreOutlet;
+
+
+
+//Title Screen:
 - (IBAction)titleScreenPlayButton:(id)sender;
 - (IBAction)titleScreenOptionsButton:(id)sender;
 - (IBAction)titleScreenStatsButton:(id)sender;
