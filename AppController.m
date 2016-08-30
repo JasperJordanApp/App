@@ -48,7 +48,7 @@
     turrets.backgroundColor = [UIColor redColor] ;
     for(int i = 0 ; i < numberOfTurrets ; i += 1){
         UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"StarterTurret"]] ;
-        
+        imageView.frame = CGRectMake(0, i*(self.view.bounds.size.height/numberOfTurrets), <#CGFloat width#>, <#CGFloat height#>)
         
     }
     
