@@ -26,6 +26,7 @@
 
 
 - (IBAction)titleScreenPlayButton:(id)sender {
+    [self.view addSubview:self.gameView] ;
 }
 
 - (IBAction)titleScreenOptionsButton:(id)sender {

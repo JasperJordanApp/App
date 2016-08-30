@@ -17,6 +17,7 @@
             <connections>
                 <outlet property="gameView" destination="yLL-fM-Vnx" id="fKA-Df-O6i"/>
                 <outlet property="titleScreen" destination="TV7-o9-Sw0" id="Bgw-dK-zIN"/>
+                <outlet property="view" destination="TV7-o9-Sw0" id="zS0-GD-ziv"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
