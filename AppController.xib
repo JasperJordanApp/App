@@ -23,6 +23,11 @@
                 <outlet property="levelOutlet" destination="QhX-mS-IXs" id="xOb-JE-gjt"/>
                 <outlet property="scoreOutlet" destination="uiH-Si-ZcZ" id="GZz-zM-kNB"/>
                 <outlet property="titleScreen" destination="TV7-o9-Sw0" id="Bgw-dK-zIN"/>
+                <outlet property="turretFourOutlet" destination="2fc-8J-q2A" id="bU6-9H-VDV"/>
+                <outlet property="turretOneOutlet" destination="RF8-94-1ne" id="Y56-3j-aTs"/>
+                <outlet property="turretThreeOutlet" destination="G70-T7-bYa" id="cCD-k0-OT9"/>
+                <outlet property="turretTwoOutlet" destination="0Vo-22-rL2" id="Hlu-T2-bN8"/>
+                <outlet property="turretZeroOutlet" destination="dmw-x6-CDf" id="YNJ-Rr-FMP"/>
                 <outlet property="view" destination="TV7-o9-Sw0" id="SFh-mi-4R5"/>
             </connections>
         </placeholder>
@@ -71,70 +76,77 @@
             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-802.5" y="39.5"/>
+            <point key="canvasLocation" x="-807.5" y="370.5"/>
         </view>
         <view contentMode="scaleToFill" id="yLL-fM-Vnx">
             <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RF8-94-1ne">
-                    <rect key="frame" x="0.0" y="75" width="100" height="75"/>
+                    <rect key="frame" x="170" y="83" width="100" height="75"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="turrentOneButton:" destination="-1" eventType="touchUpInside" id="XOP-rn-RP7"/>
+                        <action selector="turretOneButton:" destination="-1" eventType="touchUpInside" id="aEN-LY-DFY"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vo-22-rL2">
-                    <rect key="frame" x="0.0" y="150" width="100" height="75"/>
+                    <rect key="frame" x="170" y="158" width="100" height="75"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="turrentTwoButton:" destination="-1" eventType="touchUpInside" id="Zcf-Wh-hhb"/>
+                        <action selector="turretTwoButton:" destination="-1" eventType="touchUpInside" id="ywq-Ak-DJK"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmw-x6-CDf">
-                    <rect key="frame" x="0.0" y="0.0" width="100" height="75"/>
+                    <rect key="frame" x="170" y="8" width="100" height="75"/>
                     <state key="normal" title="Button"/>
                     <connections>
                         <action selector="turretZeroButton:" destination="-1" eventType="touchUpInside" id="sSl-Zj-m3S"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fc-8J-q2A">
-                    <rect key="frame" x="0.0" y="300" width="100" height="75"/>
+                    <rect key="frame" x="170" y="308" width="100" height="75"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="turrentFourButton:" destination="-1" eventType="touchUpInside" id="15P-HQ-VqS"/>
+                        <action selector="turretFourButton:" destination="-1" eventType="touchUpInside" id="Oei-s0-QuB"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G70-T7-bYa">
-                    <rect key="frame" x="0.0" y="225" width="100" height="75"/>
+                    <rect key="frame" x="170" y="233" width="100" height="75"/>
                     <state key="normal" title="Button"/>
                     <connections>
-                        <action selector="turrentThreeButton:" destination="-1" eventType="touchUpInside" id="Sni-Wb-ZIO"/>
+                        <action selector="turretThreeButton:" destination="-1" eventType="touchUpInside" id="bjX-LD-Yde"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QhX-mS-IXs">
-                    <rect key="frame" x="359" y="351" width="150" height="24"/>
+                    <rect key="frame" x="367" y="357" width="150" height="16"/>
                     <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-Si-ZcZ">
-                    <rect key="frame" x="517" y="351" width="150" height="24"/>
+                    <rect key="frame" x="517" y="357" width="150" height="16"/>
                     <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Credits:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svC-DJ-suk">
-                    <rect key="frame" x="359" y="8" width="150" height="24"/>
+                    <rect key="frame" x="367" y="0.0" width="150" height="24"/>
                     <fontDescription key="fontDescription" name="TimeNSpace" family="Time N Space" pointSize="17"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bcH-rn-hR5">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="375"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="turretsButton:forEvent:" destination="-1" eventType="touchUpInside" id="fmF-ut-2Jq"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
             <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="-74.5" y="39.5"/>
+            <point key="canvasLocation" x="-371.5" y="208.5"/>
         </view>
     </objects>
 </document>
