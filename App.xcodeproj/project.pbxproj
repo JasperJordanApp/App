@@ -13,6 +13,7 @@
 		A4D566491D73E47B00A61F00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D566471D73E47B00A61F00 /* Main.storyboard */; };
 		A4D5664B1D73E47B00A61F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D5664A1D73E47B00A61F00 /* Assets.xcassets */; };
 		A4D5664E1D73E47B00A61F00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4D5664C1D73E47B00A61F00 /* LaunchScreen.storyboard */; };
+		A4E695B11DD23F3A000399E3 /* TurretProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E695B01DD23F3A000399E3 /* TurretProperties.m */; };
 		A4FE38351D7510180047BC0C /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4FE38331D7510180047BC0C /* AppController.m */; };
 		A4FE38361D7510180047BC0C /* AppController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FE38341D7510180047BC0C /* AppController.xib */; };
 		D8257DEC1D73E7840053A058 /* Time_N_Space.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8257DEB1D73E77F0053A058 /* Time_N_Space.ttf */; };
@@ -30,6 +31,8 @@
 		A4D5664A1D73E47B00A61F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4D5664D1D73E47B00A61F00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4D5664F1D73E47B00A61F00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4E695AF1DD23F3A000399E3 /* TurretProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TurretProperties.h; sourceTree = "<group>"; };
+		A4E695B01DD23F3A000399E3 /* TurretProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TurretProperties.m; sourceTree = "<group>"; };
 		A4FE38321D7510180047BC0C /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
 		A4FE38331D7510180047BC0C /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		A4FE38341D7510180047BC0C /* AppController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppController.xib; sourceTree = "<group>"; };
@@ -51,6 +54,8 @@
 		A4D566321D73E47B00A61F00 = {
 			isa = PBXGroup;
 			children = (
+				A4E695AF1DD23F3A000399E3 /* TurretProperties.h */,
+				A4E695B01DD23F3A000399E3 /* TurretProperties.m */,
 				A4FE38321D7510180047BC0C /* AppController.h */,
 				A4FE38331D7510180047BC0C /* AppController.m */,
 				A4FE38341D7510180047BC0C /* AppController.xib */,
@@ -210,6 +215,7 @@
 			files = (
 				A4D566461D73E47B00A61F00 /* ViewController.m in Sources */,
 				A4D566431D73E47B00A61F00 /* AppDelegate.m in Sources */,
+				A4E695B11DD23F3A000399E3 /* TurretProperties.m in Sources */,
 				A4D566401D73E47B00A61F00 /* main.m in Sources */,
 				A4FE38351D7510180047BC0C /* AppController.m in Sources */,
 			);
