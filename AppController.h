@@ -18,44 +18,24 @@
     int score ;
     int levelCount ;
     double speed ;
+    int maxTurretLevel ;
     
     NSMutableArray *basicTurret ;   //store all stats for lvl 0-9
     NSMutableArray *sniperTurret ;
     NSMutableArray *machineGunTurret ;
-    
-    
 }
+
 
 //Properties:
 @property NSMutableArray *turrentArray ;
-/*Format for turretArray:
-//using class "TurretProperties", create 5 subarrays to hold that object
-Properties:
-[0] turretImageName
-[1] object of turret types class, stores speed and image for type, in both locations is cost and imageName
-[2] turret position
-[3] turret cost and sell price
-[4]
- */
 
 @property NSMutableArray *userProjectileArray ;
-/*Format using class "projectileProperties", object are objects of that class
-Properties:
- [0] starting point,
- [1] direction numbers
- [
 
- 
-*/
 @property NSMutableArray *systemProjectileArray ;
-
-
 
 @property (weak, nonatomic) IBOutlet UILabel *creditsOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *levelOutlet;
 @property (weak, nonatomic) IBOutlet UILabel *scoreOutlet;
-
-
 
 //Title Screen:
 - (IBAction)titleScreenPlayButton:(id)sender;

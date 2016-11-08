@@ -16,25 +16,32 @@
     [super viewDidLoad];
     widthOfTurret = 100 ;
     numberOfTurrets = 5 ;
-    [self updateCredits:100 level:0 score:0] ;
+    maxTurretLevel = 10 ;
+    
+    [self updateCredits:5 level:0 score:0 withAdd:false] ;
     [self createProperties] ;
 }
 
-- (void)createProperties{//create the properties for each different level turret
-    
-    //level 0
-    [basicTurret addObject:[TurretProperties new]] ;
-    TurretProperties *level = [basicTurret objectAtIndex:0] ;
-    level.costPrice = 10 ;
-    level.sellPrice = 5 ;
-    
-    //level 1
-    [basicTurret addObject:[TurretProperties new]] ;
-    level = [basicTurret objectAtIndex:1] ;
-    level.costPrice = 25 ;
-    level.sellPrice = 15 ;
-    
-    
+- (void)createProperties{   //create the properties for each different level turret
+    TurretProperties *level ;
+    for(int i = 0 ; i < maxTurretLevel ; i++){
+        [basicTurret addObject:[TurretProperties new]] ;
+        level = [basicTurret objectAtIndex:i] ;
+        level.costPrice = pow(5,i+1) ;
+        level.sellPrice = pow(5, i+1) - pow(5, i) ;
+    }
+    level = [basicTurret objectAtIndex:0] ;
+    level.sellPrice = 0 ;
+}
+
+- (void)updateCredits:(int)dummy level:(int)dummy1 score:(int)dummy2 withAdd:(BOOL)add{
+    if(add)
+    creditCount = dummy ;
+    levelCount = dummy1 ;
+    score = dummy2 ;
+    self.creditsOutlet.text = [NSString stringWithFormat:@"Credits: %i",creditCount] ;
+    self.levelOutlet.text = [NSString stringWithFormat:@"Level: %i",levelCount] ;
+    self.scoreOutlet.text = [NSString stringWithFormat:@"Score: %i",score] ;
 }
 
 - (void)updateTurretText:(NSMutableArray*)list{
@@ -83,12 +90,4 @@
 }
 
 
-- (void)updateCredits:(int)dummy level:(int)dummy1 score:(int)dummy2{
-    creditCount = dummy ;
-    levelCount = dummy1 ;
-    score = dummy2 ;
-    self.creditsOutlet.text = [NSString stringWithFormat:@"Credits: %i",creditCount] ;
-    self.levelOutlet.text = [NSString stringWithFormat:@"Level: %i",levelCount] ;
-    self.scoreOutlet.text = [NSString stringWithFormat:@"Score: %i",score] ;
-}
 @end
