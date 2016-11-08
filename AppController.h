@@ -32,14 +32,15 @@ Properties:
  */
 
 @property NSMutableArray *userProjectileArray ;
+/*Format using class "projectileProperties", object are objects of that class
+Properties:
+ [0] starting point,
+ [1] direction numbers
+ [
+
+ 
+*/
 @property NSMutableArray *systemProjectileArray ;
-
-
-
-//Game Screen:
-//- (IBAction)turretsButton:(id)sender forEvent:(UIEvent *)event;
-//@property (weak, nonatomic) IBOutlet UIButton *turretsOutlet;
-
 
 
 
