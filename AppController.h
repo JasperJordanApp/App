@@ -13,6 +13,7 @@
 @interface AppController : UIViewController{
 //Constants
     int numberOfTurrets ;
+    int numberOfTurretTypes ;
     int widthOfTurret ;
     int creditCount ;
     int score ;
@@ -23,6 +24,7 @@
     NSMutableArray *basicTurret ;   //store all stats for lvl 0-9
     NSMutableArray *sniperTurret ;
     NSMutableArray *machineGunTurret ;
+    NSMutableArray *turretTypeImages ;
 }
 
 

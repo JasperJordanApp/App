@@ -8,6 +8,8 @@
 
 #import "AppController.h"
 #import "TurretProperties.h"
+#import <Foundation/Foundation.h>
+
 
 
 @implementation AppController
@@ -17,6 +19,7 @@
     widthOfTurret = 100 ;
     numberOfTurrets = 5 ;
     maxTurretLevel = 10 ;
+    numberOfTurretTypes = 5 ;
     
     [self updateCredits:5 level:0 score:0 withAdd:false] ;
     [self createProperties] ;
@@ -62,7 +65,18 @@
     int turretNumber = floor(point.y/(self.view.bounds.size.height/numberOfTurrets)) ;
     NSLog(@"%i",turretNumber) ;
     
-}
+    UIView *popUpView= [[UIView alloc] initWithFrame:CGRectMake(120, 20, 527, 335)] ;
+    [popUpView setTintColor:[UIColor greenColor]] ;
+    for(int i = 0 ; i < numberOfTurretTypes ; i += 1 ) {
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"TurretTypes"]] ;
+        imageView.frame = CGRectMake(0, i*(self.view.bounds.size.height/numberOfTurrets), widthOfTurret, (self.view.bounds.size.height/numberOfTurrets)) ;
+        [turrets addSubview:imageView] ;
+    }
+    UIButton *buyTurret
+    UIButton *sellTurret
+    UIButton *upgradeTurret
+    }
+
 
 - (IBAction)titleScreenPlayButton:(id)sender{   //laods everything in gameView Screen
     [self.view addSubview:self.gameView] ;
