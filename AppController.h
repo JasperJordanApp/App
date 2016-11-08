@@ -8,15 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
+@class TurretProperties ;
+
 @interface AppController : UIViewController{
 //Constants
     int numberOfTurrets ;
     int widthOfTurret ;
-    
     int creditCount ;
     int score ;
     int levelCount ;
     double speed ;
+    
+    NSMutableArray *basicTurret ;   //store all stats for lvl 0-9
+    NSMutableArray *sniperTurret ;
+    NSMutableArray *machineGunTurret ;
+    
+    
 }
 
 //Properties:

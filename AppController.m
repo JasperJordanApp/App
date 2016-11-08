@@ -7,6 +7,7 @@
 //
 
 #import "AppController.h"
+#import "TurretProperties.h"
 
 
 @implementation AppController
@@ -16,6 +17,23 @@
     widthOfTurret = 100 ;
     numberOfTurrets = 5 ;
     [self updateCredits:100 level:0 score:0] ;
+    [self createProperties] ;
+}
+
+- (void)createProperties{//create the properties for each different level turret
+    
+    //level 0
+    [basicTurret addObject:[TurretProperties new]] ;
+    TurretProperties *level = [basicTurret objectAtIndex:0] ;
+    level.costPrice = 10 ;
+    level.sellPrice = 5 ;
+    
+    //level 1
+    [basicTurret addObject:[TurretProperties new]] ;
+    level = [basicTurret objectAtIndex:1] ;
+    level.costPrice = 25 ;
+    level.sellPrice = 15 ;
+    
     
 }
 
@@ -38,8 +56,6 @@
     //the turret number (0-4)
     int turretNumber = floor(point.y/(self.view.bounds.size.height/numberOfTurrets)) ;
     NSLog(@"%i",turretNumber) ;
-    
-    
     
 }
 
