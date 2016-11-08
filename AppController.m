@@ -35,17 +35,11 @@
 }
 
 - (void)updateCredits:(int)dummy level:(int)dummy1 score:(int)dummy2 withAdd:(BOOL)add{
-    if(add){
-        
-    }
-    else{
-        creditCount = dummy ;
-        levelCount = dummy1 ;
-        score = dummy2 ;
-        self.creditsOutlet.text = [NSString stringWithFormat:@"Credits: %i",creditCount] ;
-        self.levelOutlet.text = [NSString stringWithFormat:@"Level: %i",levelCount] ;
-        self.scoreOutlet.text = [NSString stringWithFormat:@"Score: %i",score] ;
-    }
+    if(add){ creditCount += dummy ; levelCount += dummy1 ; score += dummy2 ; }
+    else{ creditCount = dummy ; levelCount = dummy1 ; score = dummy2 ; }
+    self.creditsOutlet.text = [NSString stringWithFormat:@"Credits: %i",creditCount] ;
+    self.levelOutlet.text = [NSString stringWithFormat:@"Level: %i",levelCount] ;
+    self.scoreOutlet.text = [NSString stringWithFormat:@"Score: %i",score] ;
 }
 
 - (void)updateTurretText:(NSMutableArray*)list{
